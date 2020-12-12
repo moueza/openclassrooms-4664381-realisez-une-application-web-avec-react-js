@@ -10,7 +10,12 @@ class Screen /*extends Component*/ {
 
   renderVanilla = function () {
     console.log("in renderVanilla");
-  };
+  }
+
+  /**browser https://eslint.org/docs/rules/no-undef */
+  /*renderVanilla2( function () {
+    console.log("in renderVanilla2");
+  });*/
   render() {
     console.log("in renderVanilla");
   }
