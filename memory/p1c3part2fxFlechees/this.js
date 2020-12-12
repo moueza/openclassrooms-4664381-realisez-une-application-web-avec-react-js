@@ -21,7 +21,6 @@ obj.runGreet()
 
 ///modern
 const name2 = 'Extérieur'
-
 const obj2 = {
   name: 'Intérieur',
   runGreet () {
