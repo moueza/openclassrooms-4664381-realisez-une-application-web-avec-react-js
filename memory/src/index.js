@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 function CoolComponent({ adjective = "Cool" }) {
-  return <p>Youpi So Cool !!</p>;
+  return <p>Youpi So {adjective} !!</p>;
 }
 
 ReactDOM.render(
