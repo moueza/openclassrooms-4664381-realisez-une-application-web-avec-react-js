@@ -5,13 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 function CoolComponent() {
-  return React.createElement("p", {}, "Youpi So Cool !");
+  return <p>Youpi So Cool !!</p>;
 }
 
-ReactDOM.render(
-  React.createElement(CoolComponent),
-  document.getElementById("root")
-);
+ReactDOM.render(<CoolComponent />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
