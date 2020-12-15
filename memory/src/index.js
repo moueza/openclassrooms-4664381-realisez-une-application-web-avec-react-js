@@ -4,11 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-function CoolComponent() {
+function CoolComponent({ adjective = "Cool" }) {
   return <p>Youpi So Cool !!</p>;
 }
 
-ReactDOM.render(<CoolComponent />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <CoolComponent adjective="awesome" />
+    <CoolComponent />
+  </div>,
+  document.getElementById("root")
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
