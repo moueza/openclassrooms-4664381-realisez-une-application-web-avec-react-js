@@ -44,11 +44,16 @@ function PourquoiPrefererJSXComponent() {
   );
 }
 
+function NiHTMLniXmlComponent() {
+  return <br />;
+}
+
 ReactDOM.render(
   <div>
     <CoolComponent adjective="awesome" />
     <CoolComponent />
-    <PourquoiPrefererJSXComponent />
+    PourquoiPrefererJSXComponent
+    <NiHTMLniXmlComponent />
   </div>,
   document.getElementById("root")
 );
