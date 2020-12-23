@@ -48,12 +48,58 @@ function NiHTMLniXmlComponent() {
   return <br />;
 }
 
+function StringPropComponent() {
+  return (
+    <div>
+      <input
+        type="email"
+        name="email"
+        maxlength={42}
+        readonly={false}
+        onChange={this.handleFieldChange}
+        value={this.state.value}
+      />
+      <input type="email" name="email" autoFocus required />
+
+      <div className="class1">
+        <form action="/action_page.php">
+          <label htmlFor="male">Male</label>
+        </form>
+      </div>
+
+      <div>
+      <form method="post" action="/sessions" onSubmit={this.handleSubmit}>
+  {/* La classe 'field' assure l’espacement vertical convenable */}
+  <p className="field">
+    <label>
+      E-mail
+      <input type="email" name="email" required autoFocus
+        value={this.state.email}
+      
+        Comments KO
+        Avec les champs controles il est indispensable de fournir onChange
+        pour éviter que le champ soit fourni en lecture seule au niveau du
+        DOM
+       
+        onChange={this.handleFieldChange}
+      />
+    </label>
+  </p>
+  <p><button type="submit" value="Connexion" /></p>
+</form>
+      </div>
+    </div>
+  );
+}
+
 ReactDOM.render(
   <div>
     <CoolComponent adjective="awesome" />
     <CoolComponent />
     PourquoiPrefererJSXComponent
-    <NiHTMLniXmlComponent />
+    <br />
+    NiHTMLniXmlComponent
+    <StringPropComponent />
   </div>,
   document.getElementById("root")
 );
