@@ -8,10 +8,47 @@ function CoolComponent({ adjective = "Cool" }) {
   return <p>Youpi So {adjective} !!</p>;
 }
 
+/**not compile because props bad context of the form = NORMAL */
+function PourquoiPrefererJSXComponent() {
+  return (
+    <form method="post" action="/sessions" onSubmit={this.handleSubmit}>
+      <p className="field">
+        <label>
+          E-mail
+          <input
+            type="email"
+            name="email"
+            required
+            autoFocus
+            value={this.state.email}
+            onChange={this.handleFieldChange}
+          />
+        </label>
+      </p>
+      <p className="field">
+        <label>
+          Mot de passe
+          <input
+            type="password"
+            name="password"
+            required
+            value={this.state.password}
+            onChange={this.handleFieldChange}
+          />
+        </label>
+      </p>
+      <p>
+        <button type="submit" value="Connexion" />
+      </p>
+    </form>
+  );
+}
+
 ReactDOM.render(
   <div>
     <CoolComponent adjective="awesome" />
     <CoolComponent />
+    <PourquoiPrefererJSXComponent />
   </div>,
   document.getElementById("root")
 );
