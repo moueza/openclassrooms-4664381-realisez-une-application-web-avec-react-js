@@ -15,6 +15,8 @@ const Card = ({ card, feedback }) => (
   </div>
 );
 
+const GuessCount = ({ guesses }) => <div className="guesses">{guesses}</div>
+
 ReactDOM.render(<Card />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
