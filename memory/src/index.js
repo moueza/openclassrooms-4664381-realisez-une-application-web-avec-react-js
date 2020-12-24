@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 //import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import Card from './Card';
 /*https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js/4664871-mettez-en-place-un-etat-local*/
-const HIDDEN_SYMBOL = "?";
+//const HIDDEN_SYMBOL = "?";
+/*Already from Card.js*/
 
 const Card = ({ card, feedback }) => (
   <div className={`card ${feedback}`}>
